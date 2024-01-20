@@ -3,7 +3,7 @@
 A simple To-Do list application
 
 
-<img src='https://i.ibb.co/jkFXW0b/image.png' align='right'>
+<img src='https://i.ibb.co/jkFXW0b/image.png' width='35%' align='right'>
 
 
 ## Features
