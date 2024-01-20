@@ -3,7 +3,7 @@
 A simple To-Do list application
 
 
-<img src='https://ibb.co/CKFGMCm' align='right'>
+<img src='https://i.ibb.co/jkFXW0b/image.png' align='right'>
 ## Features
 - *Notifications:* get reminders about the tasks you're missing.
 - *Timer:* each added task have a timer according to the given deadline.
