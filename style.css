@@ -1,0 +1,151 @@
+/*
+bg = #FBF1C7
+bg1 = #D5C4A1
+red = #CC241D
+green = #98971A
+aqua = #689D6A
+orange = #FE8019
+*/
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fbf1c7;
+}
+
+header {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+}
+header> * {
+    box-shadow: 2px 2px 4px gray;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 20px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.green {
+    background-color: #689D6A;
+}
+.red {
+    background-color: #CC241D;
+}
+.orange {
+    background-color: #fE8019;
+}
+@media (orientation: portrait) {
+    #container {
+        width: 100vw;
+    }
+
+}
+@media (orientation: landscape) {
+    #container {
+        width: 65vw;
+        margin: 0px auto;
+    }
+
+}
+#form, #tasklist {
+    padding: 16px;
+}
+#form {
+    border-bottom: 1px solid #D5C4A1;
+    box-shadow: 4px 0px 10px gray;
+    background-color: #F9F5D7;
+}
+input {
+    margin: 18px 0;
+    background-color: #eee;
+    height: 32px;
+    font-size: 16px;
+    box-shadow: 2px 2px 4px gray;
+    border-radius: 16px;
+    padding: 0 16px;
+}
+#add {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+}
+#task, #date {
+    width: 100%;
+}
+#task input {
+    width: 100%
+}
+#date input {
+    display: block;
+    margin: 0  0  0 auto;
+}
+
+.task {
+    padding: 8px 16px;
+    display: flex;
+    margin: 16px 0;
+    border: 1px solid #D5C4A1;
+    box-shadow: -1px 1px 3px gray;
+    background-color: #F9F5D7;
+    border-radius: 4px;
+}
+.task > p{
+    margin: 7px 16px;
+}
+.check, .delete, .timer {
+    box-shadow: -2px 2px 4px gray;
+}
+.check {
+    color: #689D6A;
+    border: 2px solid #689D6A;
+    font-size: 20px;
+}
+.delete {
+    color: #CC241D;
+    border: 2px solid #CC241D;
+}
+.timer {
+    color: #FE8019;
+    border: 2px solid #FE8019;
+    border-radius: 15px;
+    height: 30px;
+    padding: 4px 8px;
+    flex-shrink: 0;
+    margin: 0  16px  0 auto;
+}
+.check, .delete {
+    padding:0; margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.dead>p {
+    text-decoration: line-through;
+    color: #CC241D;
+}
+.done>p {
+    text-decoration: line-through;
+    color: #689D6A;
+}
+.done>.check {
+    color: white;
+    background-color: #689D6A;
+}
+
+.error-msg {
+    display: block;
+    padding: 4px 0;
+    min-height: 24px;
+    color: #CC241D;
+}

@@ -1,0 +1,46 @@
+<!-- AUTHOR: yahia-soliman www.github.com/yahia-soliman/taskify -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="manifest_and_icons/manifest.json" rel="manifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="manifest_and_icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="manifest_and_icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="manifest_and_icons/favicon-16x16.png">
+    <script defer type="module" src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <div class="red"></div>
+        <div class="orange">Taskify</div>
+        <div class="green"></div>
+      </header>
+    <form id="form">
+      <label id='task'>
+        <input type="text" name="task" required placeholder="Add new task."/>
+      </label>
+      <label id='date'>
+        <input type="datetime-local" name="date" required/>
+      </label>
+      <span id="error"></span>
+      <input id='add' type="submit" name="submit" value="Add Task" />
+    </form>
+    <ul id="tasklist">
+      <!--
+      <li class="task done dead">
+        <div class="check">✔</div>
+        <p>Third Task</p>
+        <div class="timer">55s</div>
+        <div class="delete">✗</div>
+      </li>
+      -->
+    </ul>
+    <input id='notify' type="button" value="get notified" hidden />
+  </div>
+  </body>
+</html>
